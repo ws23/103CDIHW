@@ -1,53 +1,52 @@
 INT
-ID(ComputeFac)
+ID: ComputeFac
 LP
 INT
-ID(num)
+ID: num
 RP
 LSP
 INT
-ID(num_aux)
+ID: num_aux
 SEMI
 IF
 LP
-ID(num)
+ID: num
 LT
-NUM(1)
+NUM: 1
 RP
-ID(num_aux)
+ID: num_aux
 ASSIGN
-NUM(1)
+NUM: 1
 SEMI
 ELSE
-ID(num_aux)
+ID: num_aux
 ASSIGN
-ID(num)
+ID: num
 TIMES
-ID(ComputeFac)
+ID: ComputeFac
 LP
-ID(num)
+ID: num
 MINUS
-NUM(1)
+NUM: 1
 RP
 SEMI
 RETURN
-ID(num_aux)
+ID: num_aux
 SEMI
 RSP
 INT
-ID(main)
+ID: main
 LP
 RP
 LSP
 PRINTF
 LP
-STRING("%d\n")
+STRING: "%d\n"
 COMMA
-ID(ComputeFac)
+ID: ComputeFac
 LP
-NUM(10)
+NUM: 10
 RP
 RP
 SEMI
-COMMENT
-RSP
+COMMENTRSP

@@ -94,16 +94,16 @@ void print_lex(int t){
 			printf("SEMI\n"); 
 			break;
 		case ID:
-			printf("ID(%s)\n", c_name); 
+			printf("ID: %s\n", c_name); 
 			break;
 		case NUM:
-			printf("NUM(%d)\n", c_val); 
+			printf("NUM: %d\n", c_val); 
 			break;
 		case COMMENT:
-			printf("COMMENT\n"); 
+			printf("COMMENT"); 
 			break;
 		case STRING:
-			printf("STRING(%s)\n", c_name); 
+			printf("STRING: %s\n", c_name); 
 			break;
 		
 		default:
