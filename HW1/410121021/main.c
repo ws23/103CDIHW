@@ -100,7 +100,7 @@ void print_lex(int t){
 			printf("NUM: %d\n", c_val); 
 			break;
 		case COMMENT:
-			printf("COMMENT"); 
+			printf("COMMENT\n"); 
 			break;
 		case STRING:
 			printf("STRING: %s\n", c_name); 
