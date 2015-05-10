@@ -6,16 +6,17 @@
 %}
 %token INT
 %token LP RP LSP RSP
-%token SEMI COMMA ASSIGN QUEST COLON
+%token SEMI COMMA ASSIGN QUES COLON
 %token IF ELSE WHILE
 %token PRINTF BREAK CONTINUE RETURN
 %token ID NUM STRING
-%token OR AND NOT EQ LT GT LE GE ADD MINUS DIV TIMES MOD
-/*%left ADD MINUS
-%left TIMES DIV MOD
-%left ELSE*/
+%token OR AND NOT EQ LT GT ADD MINUS DIV TIMES MOD
+%left OR AND NOT
+%left EQ LT GT
+%left ADD MINUS
+%left DIV TIMES MOD
 
-%expect 1
+%expect 1 
 
 %%
 
@@ -84,7 +85,7 @@ Expr			:	ID ASSIGN Expr {printf("Expr => ID ASSIGN Expr\n"); }
 				|	Condition {printf("Expr => Condition\n"); }
 				;
 
-Condition		:	Disjunction QUEST Expr COLON Condition {printf("Condition => Disjunction QUEST Expr COLON Condition\n"); }
+Condition		:	Disjunction QUES Expr COLON Condition {printf("Condition => Disjunction QUEST Expr COLON Condition\n"); }
 				|	Disjunction {printf("Condition => Disjunction\n"); }
 				;
 

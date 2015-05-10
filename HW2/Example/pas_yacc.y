@@ -11,7 +11,7 @@
 %token ELSE ASSIGN COMMA COLON ID NUM 
 %left OR AND
 %left NOT
-%left EQ NE LT GT LE GE
+%left EQ NE LT GT LE GE 
 %left ADD MINUS
 %left DIV TIMES
 %expect 1

@@ -7,7 +7,7 @@ c_lex.o: c_lex.c
 c_yacc.o: c_yacc.c
 	gcc -c c_yacc.c
 
-c_lex.c: c_lex.l
+c_lex.c: c_lex.l c_yacc.h miniC.h
 	flex -oc_lex.c c_lex.l
 
 c_yacc.c: c_yacc.y miniC.h

@@ -1,5 +1,6 @@
 %{
-#include "c_lex.h"	
+	#include "minuC.h"	
+	#include "c_yacc.h"
 %}
 
 ID [A-Za-z_][A-Za-z0-9_]*
