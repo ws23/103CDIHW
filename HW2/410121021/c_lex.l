@@ -1,5 +1,5 @@
 %{
-	#include "minuC.h"	
+	#include "miniC.h"	
 	#include "c_yacc.h"
 %}
 
@@ -38,7 +38,6 @@ printf		{return PRINTF; }
 "||"		{return OR; }
 "&&"		{return AND; }
 "=="		{return EQ; }
-"\""		{return QUOTE; }
 ";"			{return SEMI; }
 {ID}		{sscanf(yytext, "%s", c_name); return ID; }
 {NUM}		{sscanf(yytext, "%d", &c_val); return NUM; }

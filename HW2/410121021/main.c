@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "c_lex.h"
+#include "miniC.h"
 
 char c_name[16]; 
 int c_val; 

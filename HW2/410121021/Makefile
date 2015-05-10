@@ -1,4 +1,4 @@
-main:  c_lex.o c_yacc.o main.o
+main:  c_yacc.o  c_lex.o main.o
 	gcc -o parse.exe c_lex.o c_yacc.o main.o 
 
 c_lex.o: c_lex.c
