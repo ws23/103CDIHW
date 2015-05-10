@@ -18,4 +18,4 @@ main.o: main.c
 	
 # To clean the generated files
 clean:
-	rm *.o c_lex.c c_yacc.c parse.exe
+	rm *.o c_lex.c c_yacc.c c_yacc.h parse.exe
