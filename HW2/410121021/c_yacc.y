@@ -50,7 +50,7 @@ Ss				:	Ss Stmt {printf("Ss => Ss Stmt\n"); }
 				|	Stmt {printf("Ss => Stmt\n"); }
 				;
 
-Var_decl		:	Type_specifier Var_decl_list SEMI {printf("Var_decl => Type_specifier Var_decl_list SEMI"); }
+Var_decl		:	Type_specifier Var_decl_list SEMI {printf("Var_decl => Type_specifier Var_decl_list SEMI\n"); }
 				;
 
 Var_decl_list	:	Var_decl_list COMMA Variable_id {printf("Var_decl_list => Var_decl_list COMMA Variable_id\n"); }

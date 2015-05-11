@@ -5,7 +5,8 @@ Param_decl_list => Param_decl
 Type_specifier => INT
 Variable_id => ID
 Var_decl_list => Variable_id
-Var_decl => Type_specifier Var_decl_list SEMIVDs => Var_decl
+Var_decl => Type_specifier Var_decl_list SEMI
+VDs => Var_decl
 Primary => ID
 Factor => Primary
 Term => Factor
