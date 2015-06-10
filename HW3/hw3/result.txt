@@ -1,0 +1,59 @@
+minic parses OK!
+cSTM(sFUNC): ComputeFac
+cEXP(eTYPE):2
+-- end of cEXP(eTYPE)
+cEXP(ePLIST):
+cEXP(ePDEC): num
+cEXP(eTYPE):2
+-- end of cEXP(eTYPE)
+-- end of cEXP(ePDEC)
+-- end of cEXP(ePLIST)
+cSTM(sCSTM):
+cSTM(sVDLIST):
+cSTM(sVDEC):
+cEXP(eTYPE):2
+-- end of cEXP(eTYPE)
+cEXP{eID): num_aux
+-- end of cEXP(eID)
+** end of cSTM(sVDEC)
+** end of cSTM(sVDLIST)
+cSTM(sSLIST):
+cSTM(sISTM):
+cEXP{eREL): 0
+cEXP{eID): num
+-- end of cEXP(eID)
+cEXP{eNUM): 1
+-- end of cEXP(eNUM)
+-- end of cEXP(eREL)
+cSTM(sASTM): num_aux
+cEXP{eNUM): 1
+-- end of cEXP(eNUM)
+** end of cSTM(sASTM)
+cSTM(sOELS):
+cSTM(sASTM): num_aux
+cEXP{eTIMES):
+cEXP{eID): num
+-- end of cEXP(eID)
+cEXP{eFCALL): ComputeFac
+cEXP{eMINUS):
+cEXP{eID): num
+-- end of cEXP(eID)
+cEXP{eNUM): 1
+-- end of cEXP(eNUM)
+-- end of cEXP(eMINUS)
+-- end of cEXP(eFCALL)
+-- end of cEXP(eTIMES)
+** end of cSTM(sASTM)
+** end of cSTM(sOELS)
+** end of cSTM(sISTM)
+cSTM(sSLIST):
+cSTM(sRET):
+cEXP{eID): num_aux
+-- end of cEXP(eID)
+** end of cSTM(sRET)
+** end of cSTM(sSLIST)
+** end of cSTM(sSLIST)
+** end of cSTM(sCSTM)
+** end of cSTM(sFUNC)
+MiniC successfully builds a parse tree for test.c!
+
